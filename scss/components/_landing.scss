@@ -1,0 +1,90 @@
+/*Header */
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+.header__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+  height: 100%;
+}
+.header__left {
+  p {
+    margin: 1rem 0 2.4rem;
+  }
+}
+/*===========================
+End of Header
+============================= */
+/* Matérias */
+.materias {
+  background: var(--clr-bg1);
+  height: 41rem;
+  h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+}
+.materias__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.materias__left {
+  margin-right: 4rem;
+  p {
+    margin: 1rem 0 3rem;
+  }
+}
+.materias__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+.materia {
+  background: var(--clr-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+  h5 {
+    margin: 1.25rem 0 0.5rem;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+}
+.materia:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.materia:nth-child(1) .materia__icon {
+  background: var(--clr-warning);
+}
+.materia:nth-child(3) .materia__icon {
+  background: var(--clr-danger);
+  padding-inline: 0.95rem;
+}
+.materia:nth-child(4) .materia__icon {
+  background: var(--clr-bg);
+  padding-inline: 0.95rem;
+}
+.materia:nth-child(5) .materia__icon {
+  background: rgb(145, 47, 175);
+  padding-inline: 0.95rem;
+}
+.materia:nth-child(6) .materia__icon {
+  background: var(--clr-success);
+  padding-inline: 0.95rem;
+}
+.materia:nth-child(7) .materia__icon {
+  background: var(--clr-danger-var);
+}
+.materia__icon {
+  background: var(--clr-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
