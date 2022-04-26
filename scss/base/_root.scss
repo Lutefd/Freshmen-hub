@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-  --clr-primary: hsl(243, 100%, 69%);
+  --clr-primary: hsl(359, 100%, 24%);
   --clr-success: hsl(165, 100%, 37%);
   --clr-warning: hsl(44, 91%, 63%);
   --clr-danger: hsl(7, 92%, 61%);
@@ -8,9 +8,9 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-light: hsla(0, 0%, 100%, 0.7);
   --clr-black: #000000;
-  --clr-bg: hsl(228, 35%, 19%);
-  --clr-bg1: hsl(236, 38%, 29%);
-  --clr-bg2: hsl(235, 37%, 41%);
+  --clr-bg: hsl(363, 97%, 35%);
+  --clr-bg1: #8a0507;
+  --clr-bg2: hsla(47, 98%, 51%, 0.966);
 
   --container-width-lg: 76%;
   --container-width-md: 90%;
@@ -78,7 +78,7 @@ img {
   border-color: var(--clr-white);
 }
 .btn-primary {
-  background: var(--clr-danger);
+  background: var(--clr-primary);
   color: var(--clr-white);
   border-radius: 0.5rem;
 }

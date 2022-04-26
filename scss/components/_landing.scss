@@ -46,7 +46,7 @@ End of Header
   gap: 1.2rem;
 }
 .materia {
-  background: var(--clr-bg2);
+  background: var(--clr-bg);
   padding: 2rem;
   border-radius: 2rem;
   transition: var(--transition);
@@ -62,14 +62,17 @@ End of Header
   z-index: 1;
 }
 .materia:nth-child(1) .materia__icon {
-  background: var(--clr-warning);
+  background: var(--clr-bg2);
+}
+.materia:nth-child(2) .materia__icon {
+  background: rgb(98, 98, 235);
 }
 .materia:nth-child(3) .materia__icon {
-  background: var(--clr-danger);
+  background: #273043;
   padding-inline: 0.95rem;
 }
 .materia:nth-child(4) .materia__icon {
-  background: var(--clr-bg);
+  background: #89937c;
   padding-inline: 0.95rem;
 }
 .materia:nth-child(5) .materia__icon {
@@ -77,11 +80,11 @@ End of Header
   padding-inline: 0.95rem;
 }
 .materia:nth-child(6) .materia__icon {
-  background: var(--clr-success);
+  background: rgb(46, 145, 46);
   padding-inline: 0.95rem;
 }
 .materia:nth-child(7) .materia__icon {
-  background: var(--clr-danger-var);
+  background: rgb(141, 45, 0);
 }
 .materia__icon {
   background: var(--clr-primary);
