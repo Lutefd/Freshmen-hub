@@ -178,7 +178,7 @@ End of Header
 /* Matérias */
 .materias {
   background: var(--clr-bg1);
-  height: 41rem;
+  height: 50rem;
 }
 .materias h1 {
   line-height: 1;
@@ -256,7 +256,7 @@ End of Header
 }
 
 /*=======================
-End of FAQ
+End of Materias
 ==========================*/
 .faqs {
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
@@ -299,4 +299,126 @@ End of FAQ
 
 .faq.open p {
   display: block;
+}
+
+/*=======================
+End of FAQ
+==========================*/
+/*===========================
+Footer
+==============================*/
+footer {
+  background: var(--clr-bg1);
+  padding-top: 3rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.footer__1 p {
+  margin: 0 0 2rem;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  /* Navbar */
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--clr-white);
+    cursor: pointer;
+  }
+
+  nav button#close-menu-btn {
+    display: none;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+    -webkit-animation: dropDownNav 400ms linear forwards;
+            animation: dropDownNav 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+  .nav__menu li:nth-child(2) {
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .nav__menu li:nth-child(3) {
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .nav__menu li a {
+    background: var(--clr-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav__menu li a:hover {
+    background: var(--clr-bg2);
+    color: var(--clr-white);
+  }
+
+  @-webkit-keyframes dropDownNav {
+    0% {
+      transform: rotateX(90deg) rotateZ(-90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateX(0) rotateZ(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes dropDownNav {
+    0% {
+      transform: rotateX(90deg) rotateZ(-90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateX(0) rotateZ(0) scale(1);
+      opacity: 1;
+    }
+  }
 }/*# sourceMappingURL=main.css.map */
