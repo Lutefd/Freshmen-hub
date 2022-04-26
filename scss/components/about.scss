@@ -55,6 +55,9 @@ Media Queries
   .about__container {
     grid-template-columns: 1fr;
     gap: 4rem;
+    h1 {
+      text-align: center;
+    }
   }
   .about__left {
     width: 80%;

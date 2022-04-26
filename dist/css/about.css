@@ -402,6 +402,9 @@ Media Queries
     grid-template-columns: 1fr;
     gap: 4rem;
   }
+  .about__container h1 {
+    text-align: center;
+  }
 
   .about__left {
     width: 80%;
