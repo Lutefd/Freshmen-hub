@@ -1,0 +1,63 @@
+@use '../base/reset';
+@use '../base/root';
+@use '../base/_mediaqueries';
+/*===========================
+About Main
+==============================*/
+.about__achievements {
+  margin-top: 2rem;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5rem;
+}
+.about__right {
+  p {
+    margin: 0.75rem 0 2.5rem;
+  }
+  h1:hover {
+    color: #fdc806;
+  }
+  p:hover {
+    color: #fdc806;
+  }
+}
+
+/*===========================
+Footer
+==============================*/
+footer {
+  background: var(--clr-bg1);
+  padding-top: 3rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  & > div h4 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+}
+.footer__1 {
+  p {
+    margin: 0 0 2rem;
+  }
+}
+/*============================
+Media Queries
+===============================*/
+@media (max-width: 1024px) {
+  .about__achievements {
+    margin-top: 2rem;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .about__left {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

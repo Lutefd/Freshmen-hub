@@ -100,6 +100,14 @@
   .faq {
     padding: 1.5;
   }
+  /*about main*/
+  .about__achievements {
+    margin-top: 2rem;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
 }
 /*===============================
 Phones
