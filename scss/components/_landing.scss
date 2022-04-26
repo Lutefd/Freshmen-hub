@@ -76,15 +76,15 @@ End of Header
   padding-inline: 0.95rem;
 }
 .materia:nth-child(5) .materia__icon {
+  background: rgb(141, 45, 0);
+}
+.materia:nth-child(7) .materia__icon {
   background: rgb(145, 47, 175);
   padding-inline: 0.95rem;
 }
 .materia:nth-child(6) .materia__icon {
   background: rgb(46, 145, 46);
   padding-inline: 0.95rem;
-}
-.materia:nth-child(7) .materia__icon {
-  background: rgb(141, 45, 0);
 }
 .materia__icon {
   background: var(--clr-primary);
@@ -121,12 +121,21 @@ End of Materias
     margin-top: 0.8rem;
     display: none;
   }
+  ul {
+    display: none;
+    li {
+      list-style-type: circle;
+    }
+  }
 }
 .faq__icon {
   align-self: flex-start;
   font-size: 1.2rem;
 }
 .faq.open p {
+  display: block;
+}
+.faq.open ul {
   display: block;
 }
 /*=======================

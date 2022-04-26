@@ -135,20 +135,20 @@ nav button {
   justify-content: space-between;
   align-items: center;
 }
+.nav__container a {
+  transition: var(--transition);
+}
+.nav__container a:hover {
+  color: var(--clr-bg2);
+}
 
 .nav__menu {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
-
 .nav__menu a {
   font-size: 0.9rem;
-  transition: var(--transition);
-}
-
-.nav__menu a:hover {
-  color: var(--clr-bg2);
 }
 
 /*Header */
@@ -240,6 +240,10 @@ End of Header
 }
 
 .materia:nth-child(5) .materia__icon {
+  background: rgb(141, 45, 0);
+}
+
+.materia:nth-child(7) .materia__icon {
   background: rgb(145, 47, 175);
   padding-inline: 0.95rem;
 }
@@ -247,10 +251,6 @@ End of Header
 .materia:nth-child(6) .materia__icon {
   background: rgb(46, 145, 46);
   padding-inline: 0.95rem;
-}
-
-.materia:nth-child(7) .materia__icon {
-  background: rgb(141, 45, 0);
 }
 
 .materia__icon {
@@ -292,6 +292,12 @@ End of Materias
   margin-top: 0.8rem;
   display: none;
 }
+.faq ul {
+  display: none;
+}
+.faq ul li {
+  list-style-type: circle;
+}
 
 .faq__icon {
   align-self: flex-start;
@@ -299,6 +305,10 @@ End of Materias
 }
 
 .faq.open p {
+  display: block;
+}
+
+.faq.open ul {
   display: block;
 }
 
