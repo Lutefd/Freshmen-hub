@@ -120,11 +120,19 @@ End of Materias
   p {
     margin-top: 0.8rem;
     display: none;
+    a {
+      font-weight: bold;
+      color: #fdc806;
+    }
   }
   ul {
     display: none;
     li {
       list-style-type: circle;
+      span {
+        color: #fdc806;
+        font-weight: bold;
+      }
     }
   }
 }

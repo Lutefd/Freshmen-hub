@@ -292,11 +292,19 @@ End of Materias
   margin-top: 0.8rem;
   display: none;
 }
+.faq p a {
+  font-weight: bold;
+  color: #fdc806;
+}
 .faq ul {
   display: none;
 }
 .faq ul li {
   list-style-type: circle;
+}
+.faq ul li span {
+  color: #fdc806;
+  font-weight: bold;
 }
 
 .faq__icon {
