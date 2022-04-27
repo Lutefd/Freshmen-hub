@@ -35,6 +35,7 @@ Materias Header
  ================================*/
 
 .topics {
+  background-color: var(--clr-bg1);
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 .topics__container {
@@ -86,7 +87,7 @@ End of Topics
 Footer
 ==============================*/
 footer {
-  background: var(--clr-bg1);
+  background: var(--clr-primary);
   padding-top: 3rem;
 }
 .footer__container {
@@ -101,5 +102,28 @@ footer {
 .footer__1 {
   p {
     margin: 0 0 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .m-header__container {
+    grid-template-columns: 1fr;
+    .m-header__right {
+      margin: 0 auto;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+  .topics__container {
+    grid-template-columns: 1fr;
+  }
+  .topic {
+    padding: 1.5;
+  }
+}
+@media (max-width: 600px) {
+  .topics__container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
