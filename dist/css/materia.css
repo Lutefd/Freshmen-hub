@@ -432,6 +432,13 @@ Materias Header
   display: block;
 }
 
+.topic__ied {
+  grid-template-columns: 1fr;
+}
+.topic__ied h4 {
+  text-align: center;
+}
+
 /*=======================
 End of Topics
 ==========================*/

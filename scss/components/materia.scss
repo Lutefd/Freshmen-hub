@@ -81,6 +81,12 @@ Materias Header
 .topic.open ul {
   display: block;
 }
+.topic__ied {
+  grid-template-columns: 1fr;
+  h4 {
+    text-align: center;
+  }
+}
 /*=======================
 End of Topics
 ==========================*/
