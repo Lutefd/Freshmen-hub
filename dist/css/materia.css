@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -347,126 +346,98 @@ Phones
   }
 }
 /*===========================
-Courses header
+Materias Header
 ==============================*/
-.courses__header {
+.mat__header {
   margin-top: 2rem;
 }
 
-.c-header__container {
+.m-header__container {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 5rem;
 }
 
-.c-header__right p {
+.m-header__right p {
   margin: 1.4rem 0 2.5rem;
 }
-.c-header__right h1:hover {
+.m-header__right h1:hover {
   color: #fdc806;
 }
-.c-header__right p:hover {
+.m-header__right p:hover {
   color: #fdc806;
 }
 
-.c-header__left img {
+.m-header__left img {
   width: 80%;
   align-self: center;
   transform: translateY(-2rem);
 }
 
-/* Matérias */
-.materias {
-  background: var(--clr-bg1);
-  height: auto;
+/*=============================
+ Topics
+ ================================*/
+.topics {
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
-.materias h1 {
-  line-height: 1;
-  margin-bottom: 3rem;
-}
 
-.materias__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.materias__top {
-  margin-right: 4rem;
-  text-align: center;
-}
-
-.materias__bottom {
+.topics__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.materia {
-  background: var(--clr-bg);
+.topic {
   padding: 2rem;
-  border-radius: 2rem;
-  transition: var(--transition);
-  position: relative;
-}
-.materia h5 {
-  margin: 1.25rem 0 0.5rem;
-}
-.materia p {
-  font-size: 0.85rem;
-}
-
-.materia:hover {
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.materia:nth-child(1) .materia__icon {
-  background: var(--clr-bg2);
-}
-
-.materia:nth-child(2) .materia__icon {
-  background: rgb(98, 98, 235);
-}
-
-.materia:nth-child(3) .materia__icon {
-  background: #273043;
-  padding-inline: 0.95rem;
-}
-
-.materia:nth-child(4) .materia__icon {
-  background: #89937c;
-  padding-inline: 0.95rem;
-}
-
-.materia:nth-child(5) .materia__icon {
-  background: rgb(141, 45, 0);
-}
-
-.materia:nth-child(7) .materia__icon {
-  background: rgb(145, 47, 175);
-  padding-inline: 0.95rem;
-}
-
-.materia:nth-child(6) .materia__icon {
-  background: rgb(46, 145, 46);
-  padding-inline: 0.95rem;
-}
-
-.materia__icon {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background: var(--clr-primary);
-  padding: 0.7rem;
-  border-radius: 0.9rem;
+  cursor: pointer;
+}
+.topic h4 {
+  font-size: 1rem;
+  line-height: 2.2;
+}
+.topic p {
+  margin-top: 0.8rem;
+  display: none;
+}
+.topic ul {
+  display: none;
+}
+.topic ul li {
+  list-style-type: circle;
+}
+.topic ul li a {
+  color: #fdc806;
+}
+
+.topic__icon {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.topic.open p {
+  display: block;
+}
+
+.topic.open ul {
+  display: block;
 }
 
 /*=======================
-End of Materias
+End of Topics
 ==========================*/
 /*===========================
 Footer
 ==============================*/
 footer {
-  background: var(--clr-primary);
+  background: var(--clr-bg1);
   padding-top: 3rem;
 }
 
@@ -482,35 +453,4 @@ footer {
 
 .footer__1 p {
   margin: 0 0 2rem;
-}
-
-@media (max-width: 1024px) {
-  .c-header__container {
-    grid-template-columns: 1fr;
-  }
-  .c-header__container h1 {
-    text-align: center;
-    margin-left: 2.5rem;
-  }
-  .c-header__container img {
-    margin: 0 auto;
-  }
-
-  .materias__bottom {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 600px) {
-  .materias__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
-  .materias__container h1 {
-    margin-left: 2.5rem;
-  }
-
-  .materias__bottom {
-    grid-template-columns: 1fr;
-  }
-}/*# sourceMappingURL=courses.css.map */
+}/*# sourceMappingURL=materia.css.map */
