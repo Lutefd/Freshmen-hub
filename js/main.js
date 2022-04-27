@@ -39,3 +39,18 @@ const closeNav = () => {
   menuBtn.style.display = 'inline-block';
 };
 closeBtn.addEventListener('click', closeNav);
+// show/hide topics content
+const topics = document.querySelectorAll('.topic');
+
+topics.forEach((topic) => {
+  topic.addEventListener('click', () => {
+    topic.classList.toggle('open');
+    //changing the icon
+    const icon = faq.querySelector('.topic__icon i');
+    if (icon.className === 'uil uil-plus') {
+      icon.className = 'uil uil-minus';
+    } else {
+      icon.className = 'uil uil-plus';
+    }
+  });
+});
