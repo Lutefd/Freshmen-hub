@@ -414,7 +414,8 @@ Materias Header
 .topic ul li {
   list-style-type: circle;
 }
-.topic ul li a {
+.topic ul li a,
+.topic ul li span {
   color: #fdc806;
 }
 

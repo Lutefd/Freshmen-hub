@@ -64,7 +64,8 @@ Materias Header
     display: none;
     li {
       list-style-type: circle;
-      a {
+      a,
+      span {
         color: #fdc806;
       }
     }
