@@ -435,8 +435,9 @@ Materias Header
 .topic__ied {
   grid-template-columns: 1fr;
 }
-.topic__ied h4 {
-  text-align: center;
+
+.topic-0 {
+  grid-column: span 2;
 }
 
 /*=======================
@@ -481,6 +482,10 @@ footer {
 
   .topic {
     padding: 1.5;
+  }
+
+  .topic-0 {
+    grid-column: span 1;
   }
 }
 @media (max-width: 600px) {
