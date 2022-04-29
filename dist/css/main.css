@@ -345,6 +345,10 @@ footer {
   margin: 0 0 2rem;
 }
 
+.footer__logo:hover {
+  color: #fdc806;
+}
+
 /* Tablets */
 @media (max-width: 1024px) {
   .container {

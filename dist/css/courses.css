@@ -484,6 +484,10 @@ footer {
   margin: 0 0 2rem;
 }
 
+.footer__logo:hover {
+  color: #fdc806;
+}
+
 @media (max-width: 1024px) {
   .c-header__container {
     grid-template-columns: 1fr;
