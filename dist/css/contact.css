@@ -359,8 +359,8 @@ Contact container
   grid-template-columns: 40% 60%;
   gap: 4rem;
   height: 30rem;
-  margin: 7rem auto;
   border-radius: 1rem;
+  margin: 7rem auto;
 }
 
 /*===========================
@@ -424,7 +424,7 @@ Contact form
 Footer
 ==============================*/
 footer {
-  background: var(--clr-bg1);
+  background: var(--clr-primary);
   padding-top: 3rem;
 }
 
@@ -460,6 +460,7 @@ Tablet media querie
     margin-top: 3rem;
     height: auto;
     padding: 1.5rem;
+    margin-bottom: 15rem;
   }
 
   .contact__aside {
@@ -476,7 +477,7 @@ Tablet media querie
 /*===========================
 Phone media querie
 ==============================*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .contact__container {
     grid-template-columns: 1fr;
     gap: 3rem;
