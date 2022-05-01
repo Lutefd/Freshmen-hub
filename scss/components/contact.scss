@@ -1,0 +1,136 @@
+@use '../base/reset';
+@use '../base/root';
+@use '../base/mediaqueries';
+/*===========================
+Contact container
+==============================*/
+.contact__container {
+  background: var(--clr-bg1);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+/*===========================
+Contact aside
+==============================*/
+.contact__aside {
+  background: rgb(211, 11, 0);
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 8rem;
+  h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+}
+.aside__image {
+  width: 14rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+/*===========================
+Contact form
+==============================*/
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+  input[type='text'] {
+    width: 50%;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--clr-white);
+    border-radius: 0.5rem;
+  }
+  .btn {
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+}
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/*===========================
+Footer
+==============================*/
+footer {
+  background: var(--clr-bg1);
+  padding-top: 3rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  & > div h4 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+}
+.footer__1 {
+  p {
+    margin: 0 0 2rem;
+    color: #fdc806;
+  }
+}
+.footer__logo:hover {
+  color: #fdc806;
+}
+/*===========================
+Tablet media querie
+==============================*/
+@media (max-width: 1024px) {
+  .contact {
+    padding-bottom: 0;
+  }
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+/*===========================
+Phone media querie
+==============================*/
+@media (max-width: 768px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  .contact__form {
+    margin: 0 1.5rem 3rem;
+  }
+  .form__name {
+    flex-direction: column;
+    input[type='text'] {
+      width: 100%;
+    }
+  }
+}

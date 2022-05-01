@@ -214,6 +214,10 @@ nav button {
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
   }
+  .nav__menu li:nth-child(4) {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
   .nav__menu li a {
     background: var(--clr-primary);
     box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);

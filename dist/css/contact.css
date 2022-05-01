@@ -350,121 +350,81 @@ Phones
   }
 }
 /*===========================
-Materias Header
+Contact container
 ==============================*/
-.mat__header {
-  margin-top: 2rem;
-}
-
-.m-header__container {
+.contact__container {
+  background: var(--clr-bg1);
+  padding: 4rem;
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 5rem;
-}
-
-.m-header__right p {
-  margin: 1.4rem 0 2.5rem;
-}
-.m-header__right h1:hover {
-  color: #fdc806;
-}
-.m-header__right p:hover {
-  color: #fdc806;
-}
-
-.m-header__left img {
-  width: 80%;
-  align-self: center;
-  transform: translateY(-2rem);
-}
-.m-header__left .magnify-1 {
-  width: 110%;
-}
-.m-header__left .magnify-2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/*=============================
- Topics
- ================================*/
-.topics {
-  background-color: var(--clr-bg1);
-  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-}
-
-.topics__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.topic {
-  padding: 2rem;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  margin: 7rem auto;
   border-radius: 1rem;
+}
+
+/*===========================
+Contact aside
+==============================*/
+.contact__aside {
+  background: rgb(211, 11, 0);
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 8rem;
+}
+.contact__aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.contact__aside p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.aside__image {
+  width: 14rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+/*===========================
+Contact form
+==============================*/
+.contact__form {
   display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: var(--clr-primary);
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+.contact__form input[type=text] {
+  width: 50%;
+}
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--clr-white);
+  border-radius: 0.5rem;
+}
+.contact__form .btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   cursor: pointer;
-}
-.topic h4 {
-  font-size: 1rem;
-  line-height: 2.2;
-}
-.topic p {
-  margin-top: 0.8rem;
-  display: none;
-}
-.topic ul {
-  display: none;
-}
-.topic ul li {
-  list-style-type: circle;
-}
-.topic ul li a,
-.topic ul li span {
-  color: #fdc806;
+  margin-top: 1rem;
 }
 
-.topic__icon {
-  align-self: flex-start;
-  font-size: 1.2rem;
+.form__name {
+  display: flex;
+  gap: 1.2rem;
 }
 
-.topic.open p {
-  display: block;
-}
-
-.topic.open ul {
-  display: block;
-}
-
-.topic__ied {
-  grid-template-columns: 1fr;
-}
-
-.topic-0 {
-  grid-column: span 2;
-}
-
-/*=======================
-End of Topics
-==========================*/
 /*===========================
 Footer
 ==============================*/
 footer {
-  background: var(--clr-primary);
+  background: var(--clr-bg1);
   padding-top: 3rem;
 }
 
@@ -487,32 +447,51 @@ footer {
   color: #fdc806;
 }
 
+/*===========================
+Tablet media querie
+==============================*/
 @media (max-width: 1024px) {
-  .m-header__container {
-    grid-template-columns: 1fr;
-  }
-  .m-header__container .m-header__right {
-    margin: 0 auto;
-  }
-  .m-header__container img {
-    margin: 0 auto;
+  .contact {
+    padding-bottom: 0;
   }
 
-  .topics__container {
-    grid-template-columns: 1fr;
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
   }
 
-  .topic {
-    padding: 1.5;
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
   }
 
-  .topic-0 {
-    grid-column: span 1;
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
   }
 }
-@media (max-width: 600px) {
-  .topics__container {
-    display: grid;
+/*===========================
+Phone media querie
+==============================*/
+@media (max-width: 768px) {
+  .contact__container {
     grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
   }
-}/*# sourceMappingURL=materia.css.map */
+
+  .contact__form {
+    margin: 0 1.5rem 3rem;
+  }
+
+  .form__name {
+    flex-direction: column;
+  }
+  .form__name input[type=text] {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.css.map */

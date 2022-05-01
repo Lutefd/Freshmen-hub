@@ -49,6 +49,9 @@
       &:nth-child(3) {
         animation-delay: 400ms;
       }
+      &:nth-child(4) {
+        animation-delay: 600ms;
+      }
       a {
         background: var(--clr-primary);
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);

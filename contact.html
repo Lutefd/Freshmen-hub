@@ -19,14 +19,14 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- css -->
-    <link rel="stylesheet" href="./dist/css/about.css" />
+    <link rel="stylesheet" href="./dist/css/contact.css" />
     <!-- bg texture -->
     <style>
       body {
         background-image: url(./images/bg-texture.png);
       }
     </style>
-    <title>Teoria do Estado, Política e Direito</title>
+    <title>Contato</title>
   </head>
   <body>
     <!-- start of navbar -->
@@ -44,42 +44,43 @@
       </div>
     </nav>
     <!-- end of navbar -->
-    <section class="about__achievement">
-      <div class="container about__container">
-        <div class="about__left">
-          <img src="/images/TEPD.svg" alt="" />
-        </div>
-        <div class="about__right">
-          <h1>Apresentação da Disciplina</h1>
+    <section class="contact">
+      <div class="container contact__container">
+        <aside class="contact__aside">
+          <div class="aside__image">
+            <img src="./images/contact.svg" alt="" />
+          </div>
+          <h2>Entre em Contato</h2>
           <p>
-            A disciplina de Teoria do Estado, Política e Direito é ministrada
-            pelo professor Carlos Artur Gallo. O curso contempla diversos
-            assuntos e conceitos que auxiliam a compreensão da Teoria Política e
-            da realidade social existente nas diferentes épocas. Por isso, a
-            disciplina se inicia com a história da formação do Estado e da
-            política por meio de uma linha do tempo, acompanhada das ideias
-            defendidas pelos autores clássicos. Após esse entendimento, passa-se
-            a analisar as noções de democracia, cidadania e direitos humanos
-            para, finalmente, culminar no conhecimento da política nas
-            sociedades atuais. Todo conteúdo criado pelo professor foi pensado
-            com muita cautela, organização e didática para facilitar a
-            compreensão dos alunos: 20 tópicos contendo vídeo-aulas gravadas e
-            materiais excelentes para aprofundamento. Dito isso, optamos por não
-            abrir esse curso em tópicos dada a ótima exposição e explicação
-            feita pelo professor, com a ausência de lacunas. Acreditamos que a
-            matéria é abordada de forma descomplicada e será de fácil
-            entendimento para vocês. Caso não tenham acesso às aulas gravadas
-            devido a mudança de regime de aulas, por favor entrem em contato
-            conosco para tentarmos conseguir a permissão do professor para
-            disponibilizá-las para vocês. Caso venham a ter dificuldade no
-            decorrer do ano sintam-se a vontade para nos contatar, podemos
-            disponibilizar uma estrutura similar às outras disciplinas sem
-            muitos problemas.
+            Em caso de alguma dúvida ou pedido você pode entrar em contato a
+            partir do formulario ao lado
           </p>
-        </div>
+        </aside>
+        <form
+          action="https://formspree.io/f/xrgjoore"
+          method="POST"
+          class="contact__form"
+        >
+          <div class="form__name">
+            <input type="text" name="First Name" placeholder="Nome" required />
+            <input
+              type="text"
+              name="Last Name"
+              placeholder="Sobrenome"
+              required
+            />
+          </div>
+          <input type="email" name="Email" placeholder="Email" required />
+          <textarea
+            name="Message"
+            rows="7"
+            required
+            placeholder="Sua mensagem"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
       </div>
     </section>
-
     <!-- footer -->
     <footer>
       <div class="container footer__container">
