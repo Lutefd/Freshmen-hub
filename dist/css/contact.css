@@ -150,6 +150,33 @@ nav button {
   font-size: 0.9rem;
 }
 
+/*===========================
+Footer
+==============================*/
+footer {
+  background: var(--clr-primary);
+  padding-top: 3rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.footer__1 p {
+  margin: 0 0 2rem;
+  color: #fdc806;
+}
+
+.footer__logo:hover {
+  color: #fdc806;
+}
+
 /* Tablets */
 @media (max-width: 1024px) {
   .container {
@@ -421,33 +448,6 @@ Contact form
 }
 
 /*===========================
-Footer
-==============================*/
-footer {
-  background: var(--clr-primary);
-  padding-top: 3rem;
-}
-
-.footer__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-}
-.footer__container > div h4 {
-  margin-bottom: 1.2rem;
-  text-align: center;
-}
-
-.footer__1 p {
-  margin: 0 0 2rem;
-  color: #fdc806;
-}
-
-.footer__logo:hover {
-  color: #fdc806;
-}
-
-/*===========================
 Tablet media querie
 ==============================*/
 @media (max-width: 1024px) {
@@ -460,7 +460,6 @@ Tablet media querie
     margin-top: 3rem;
     height: auto;
     padding: 1.5rem;
-    margin-bottom: 15rem;
   }
 
   .contact__aside {

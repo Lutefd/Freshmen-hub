@@ -98,31 +98,6 @@ Materias Header
 /*=======================
 End of Topics
 ==========================*/
-/*===========================
-Footer
-==============================*/
-footer {
-  background: var(--clr-primary);
-  padding-top: 3rem;
-}
-.footer__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  & > div h4 {
-    margin-bottom: 1.2rem;
-    text-align: center;
-  }
-}
-.footer__1 {
-  p {
-    margin: 0 0 2rem;
-    color: #fdc806;
-  }
-}
-.footer__logo:hover {
-  color: #fdc806;
-}
 @media (max-width: 1024px) {
   .m-header__container {
     grid-template-columns: 1fr;
