@@ -473,6 +473,11 @@ Tablet media querie
     margin-right: 1.5rem;
   }
 }
+@media (min-height: 1046px) {
+  .contact__container {
+    height: calc(72.5vh - 5rem);
+  }
+}
 /*===========================
 Phone media querie
 ==============================*/
