@@ -90,8 +90,13 @@ Tablet media querie
   }
 }
 @media (min-height: 1046px) {
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
   .contact__container {
-    height: calc(72.5vh - 5rem);
+    max-width: 75em;
   }
 }
 /*===========================
